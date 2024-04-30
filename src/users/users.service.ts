@@ -19,6 +19,9 @@ export class UsersService {
   findAll() {
     return this.userRepository.find();
   }
+  count() {
+    return this.userRepository.count();
+  }
 
   findOne(id: number) {
     return this.userRepository.findOneBy({ codPessoa:id});

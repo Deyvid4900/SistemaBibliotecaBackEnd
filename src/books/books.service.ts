@@ -21,6 +21,9 @@ export class BooksService {
   findAll() {
     return this.bookRepository.find();
   }
+  count() {
+    return this.bookRepository.count();
+  }
 
   findOne(codLivro: number) {
     return this.bookRepository.findOneBy({ codLivro:codLivro});
